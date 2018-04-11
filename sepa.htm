@@ -1,0 +1,42 @@
+<html>
+  <header>
+    <script src="sepa.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="sepa.css"></link>
+  </header>
+  <body onload="initMe()">
+    <div>
+      <ul>
+	    <li>incasso.xml
+		  <input type="file" onchange="fillXml(event, 'sepaXml')"/>
+		  <button type="button" value="read" onclick="fillSepaXml()">Converteer naar sepa.xml</button>
+		</li>
+		<li>
+		  <button type="button" value="excel" onclick="excel2Xml()">Excel -> Sepa</button>
+		  <button type="button" value="info" onclick="displayResult()">Details</button>
+		  <button type="button" value="save" onclick="saveTextAsXmlFile()">Download incassobestand</button>
+		</li>
+      </ul>
+    </div>
+	<table>
+	  <tr><td><input type="text" id="naam" placeholder="Naam"/></td></tr>
+	  <tr><td><input type="text" id="iban" placeholder="IBAN"/></td></tr>
+	  <tr><td><input type="text" id="bic" placeholder="BIC"/></td></tr>
+	  <tr><td><input type="text" id="incassantid" placeholder="IncassantId"/></td></tr>
+	  <tr><td><input type="text" id="datum" placeholder="JJJJ-MM-DD" placeholder="Datum"/></td></tr>
+	  <tr><td><input type="text" id="tijd" placeholder="UU:MM:SS" placeholder="Tijd"/></td></tr>
+	  <tr><td><input type="text" id="kenmerk" placeholder="Kenmerk"/></td></tr>
+	  <tr>
+	    <td>
+          <textarea class="nodisplay" id="customXml" rows="20" cols="100" ></textarea>
+		  <textarea id="excel" rows="15" cols="100" placeholder="Plak hier de excel incassantenlijst met de volgende kolommen
+Mandaatid Mandaatdatum (JJJJ-MM-DD) IBAN Naam Bedrag (euros.centen)"></textarea><br/>
+		  <textarea class="nodisplay" id="excelXml" readonly="true" rows="15" cols="100"></textarea>
+          <textarea id="sepaXml" rows="20" cols="100" placeholder="Incassobestand voor de bank"></textarea>
+        </td>
+	    <td>
+		  <div id="info"></div>
+        </td>
+	  </tr>
+    <table>
+  </body>
+</html>

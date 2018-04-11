@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sepa>
+  <incasso>
+    <datum>2016-09-01</datum>
+    <tijd>15:17:00</tijd>
+    <kenmerk>kenmerk</kenmerk>
+  </incasso>
+  <vereniging>
+    <naam>Vereniging</naam>
+    <iban>NL40RABO0180001944</iban>
+    <bic>RABONL4U</bic>
+    <incassantid>NL00ZZZ342838</incassantid>
+  </vereniging>
+  <lid>
+    <naam>Dhr André Zoëven</naam>
+    <iban>NL98ABNA0223787787</iban>
+    <bedrag>6</bedrag>
+    <mandaatid>1</mandaatid>
+    <mandaatdatum>2016-08-31</mandaatdatum>
+    <bevestigd>Nee</bevestigd>
+  </lid>
+  <lid>
+    <naam>Naam2</naam>
+    <iban>NL57ABNA0992219906</iban>
+    <bedrag>6.5</bedrag>
+    <mandaatid>2</mandaatid>
+    <mandaatdatum>2016-08-30</mandaatdatum>
+    <bevestigd>Ja</bevestigd>
+  </lid>
+  <lid>
+    <naam>Naam3</naam>
+    <iban>NL91INGB0692301544</iban>
+    <bedrag>7.3</bedrag>
+    <mandaatid>3</mandaatid>
+    <mandaatdatum>2016-08-29</mandaatdatum>
+    <bevestigd>Ja</bevestigd>
+  </lid>
+</sepa>

@@ -1,0 +1,31 @@
+body {
+  background-color:lightgrey;
+  font: normal 14px Verdana, Arial, sans-serif;
+}
+td {
+  vertical-align: top;
+  text-align: right;
+  white-space:nowrap;
+}
+h2{
+  text-align: center;
+}
+th {
+  vertical-align: top;
+  background-color: #9acd32;
+}
+.nodisplay {
+  display: none;
+}
+.row0 {
+  background-color:silver;
+}
+.table {
+  display: table;
+}
+.row {
+  display: table-row;
+}
+.cell {
+  display: table-cell;
+}
