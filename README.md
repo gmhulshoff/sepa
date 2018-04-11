@@ -1,2 +1,2 @@
 # sepa
-Create sepa credit files from excel
+Create sepa direct debit files from excel
